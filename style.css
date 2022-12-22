@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
+body{
+    display: grid;
+    background-color: rgba(243,234,227,255);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    place-content: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+} 
+.achat{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    border: none;
+    border-radius: 15px;
+    max-width: 55rem;
+    height: auto;
+    background-color: white;
+}
+.image img{
+    border-radius: 10px 0px 0px 10px;
+    width: 30rem;
+    height:100%;
+}
+.main-text{
+    padding-left:1.8rem ;
+}
+
+#perfume{
+    color: hsl(228, 12%, 48%);
+    font-size: 1.125rem;
+    font-weight: 500;
+    opacity: 60%;
+
+}
+#title{
+    padding: 0;
+    color: hsl(212, 21%, 14%);
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+#description{
+    color: hsl(228, 12%, 48%);
+    font-size: 1.125rem;
+    opacity: 60%;
+    font-family: 'Kenia', cursive;
+    font-family: 'Zen Dots', cursive;
+
+}
+.price{
+    position: relative;
+    display: flex;
+}
+#price-promo{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #3c8168;
+    font-family: 'Fraunces', serif; 
+}
+#price-basic{
+    position: relative;
+    text-decoration: line-through;
+    top: 50px;
+    padding-left: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+
+}
+.add-cart{
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    background-color: #398368;
+    border: 1px solid none;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: -20px;
+}
+.add-cart p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255,100%);
+    font-weight: 700;
+}
+.overlay{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #1b3f325e;
+}
+.add-cart:hover .overlay{
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1200px){
+    .achat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    .image img{
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .add-cart{
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width:520px){
+    #title{
+        overflow: scroll;
+    }
+}
